@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Button from './UI/Button';
 
 const AllCompleted = () => {
-  // Состояние для списка задач
   const [tasks, setTasks] = useState([
     { id: 1, title: 'Task 1', completed: false },
     { id: 2, title: 'Task 2', completed: true },
@@ -10,12 +9,10 @@ const AllCompleted = () => {
     { id: 4, title: 'Task 4', completed: true }
   ]);
 
-  // Функции для фильтрации задач по статусу
   const showAll = () => setFilteredTasks(tasks);
   const showCompleted = () => setFilteredTasks(tasks.filter(task => task.completed));
   const showUncompleted = () => setFilteredTasks(tasks.filter(task => !task.completed));
 
-  // Состояние для отфильтрованных задач
   const [filteredTasks, setFilteredTasks] = useState(tasks);
 
   return (

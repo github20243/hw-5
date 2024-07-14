@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './UI/Button'; // Убедитесь, что путь к вашему компоненту Button правильный
+import Button from './UI/Button'; 
 
 const Item = () => {
   const [selectedItem, setSelectedItem] = useState(null);
